@@ -7,9 +7,9 @@
 ?>
 <footer class="main-footer no-print">
     <div class="pull-right hidden-xs">
-        <b>Version</b> 1.0.4 [Stable]
+        <b>Version</b> 1.0.4 [Beta]
     </div>
-    <strong>Developed by Kerala Police ICT Centre</strong>
+    <strong>Developed by Team PGDeG</strong>
     <div id="inners" class="col-md-3" style="z-index: 2000"></div>
 </footer>
 </div>
