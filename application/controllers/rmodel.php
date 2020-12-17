@@ -115,13 +115,13 @@ class Rank_model extends CI_Model {
 
 
         $sql = "SELECT 
-        idrank id , 
-        rank_desc rname,
-        rank_short_tag rshort
-        FROM rank 
-        WHERE status =1
-        ORDER BY rank_priority
-                ";
+		idrank id , 
+		rank_desc rname,
+		rank_short_tag rshort
+		FROM rank 
+		WHERE status =1
+		ORDER BY rank_priority
+				";
 
         $rs = $this->db->query($sql);
         $items = array();
@@ -135,12 +135,12 @@ class Rank_model extends CI_Model {
 
 
         $sql = "SELECT 
-        idrank id , 
-        rank_desc rname,
-        rank_short_tag rshort
-        FROM rank 
-        WHERE status =1 AND unit_head =1 
-        ORDER BY rank_priority";
+		idrank id , 
+		rank_desc rname,
+		rank_short_tag rshort
+		FROM rank 
+		WHERE status =1 AND unit_head =1 
+		ORDER BY rank_priority";
 
         $rs = $this->db->query($sql);
         $items = array();
@@ -152,10 +152,10 @@ class Rank_model extends CI_Model {
 
     public function viewAll() {
         $sql = "SELECT 
-        idrank id, 
-        rank_desc rcode,
-        rank_short_tag rname
-        FROM rank";
+		idrank id, 
+		rank_desc rcode,
+		rank_short_tag rname
+		FROM rank";
 
         $result = $this->db->query($sql);
         if ($result->num_rows() > 0) {
@@ -184,10 +184,10 @@ class Rank_model extends CI_Model {
 
     public function listAllRank() {
         $sql = "SELECT 
-        id idrank , 
-        rank_desc rcode,
-        rank_short rname
-        FROM m_rank";
+		id idrank , 
+		rank_desc rcode,
+		rank_short rname
+		FROM m_rank";
 
         $rs = $this->db->query($sql);
         $items = array();
@@ -200,11 +200,11 @@ class Rank_model extends CI_Model {
     public function viewbyidrank() {
 
         $sql = "SELECT 
-        idrank  id, 
-        rank_desc rcode,
-        rank_short_tag rname
-        FROM rank
-        WHERE idrank=" . $this->db->escape($this->idrank) . "";
+		idrank  id, 
+		rank_desc rcode,
+		rank_short_tag rname
+		FROM rank
+		WHERE idrank=" . $this->db->escape($this->idrank) . "";
         $result = $this->db->query($sql);
 
         if ($result->num_rows() == 1) {
@@ -234,9 +234,9 @@ class Rank_model extends CI_Model {
     public function delete() {
 
         $sql = "DELETE 
-        FROM 
-        rank 
-        WHERE idrank=" . $this->db->escape($this->idrank) . "";
+		FROM 
+		rank 
+		WHERE idrank=" . $this->db->escape($this->idrank) . "";
         if ($this->db->query($sql)) {
             return true;
         } else {

@@ -28,7 +28,7 @@ if (!defined('BASEPATH'))
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/login.css">
          <style>
         
-            body {background-color: #F0F0F0;}
+            body {background-color: #1a0000;}
         </style> 
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
