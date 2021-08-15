@@ -18,7 +18,7 @@ class Rank_model extends CI_Model {
     var $rank_short;
     var $priority;
     var $status;
-    var $table = 'm_rank';
+    var $table = 'rank';
     var $column_order = array(null, 'id', 'rank_desc', 'rank_short', 'status'); //set column field database for datatable orderable
     var $column_search = array('rank_desc', 'rank_short'); //set column field database for datatable searchable 
     var $order = array('id' => 'asc'); // default order 
@@ -224,7 +224,7 @@ class Rank_model extends CI_Model {
         );
         //echo $sql;
         $this->db->where('idrank', $this->idrank);
-        if ($this->db->update('m_rank', $data)) {
+        if ($this->db->update('rank', $data)) {
             return true;
         } else {
             return false;
@@ -250,7 +250,7 @@ class Rank_model extends CI_Model {
         );
         $this->db->where('idrank', $this->idrank);
         //echo $sql;
-        if ($this->db->update('m_rank', $data)) {
+        if ($this->db->update('rank', $data)) {
             return true;
         } else {
             return false;
@@ -263,7 +263,7 @@ class Rank_model extends CI_Model {
         );
         $this->db->where('idrank', $this->idrank);
         //echo $sql;
-        if ($this->db->update('m_rank', $data)) {
+        if ($this->db->update('rank', $data)) {
             return true;
         } else {
             return false;
